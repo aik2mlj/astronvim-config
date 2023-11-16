@@ -9,6 +9,7 @@ return {
     -- second key is the lefthand side of the map
 
     -- navigate buffer tabs with `alt-h` and `alt-l`
+    ["<leader>o"] = false,
     ["<M-l>"] = {
       function() require("astronvim.utils.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end,
       desc = "Next buffer",
@@ -17,6 +18,7 @@ return {
       function() require("astronvim.utils.buffer").nav(-(vim.v.count > 0 and vim.v.count or 1)) end,
       desc = "Previous buffer",
     },
+    ["<M-p>"] = ":b#<CR>",
 
     -- mappings seen under group name "Buffer"
     ["<leader>bD"] = {
@@ -35,27 +37,35 @@ return {
 
     -- ["<"] = {"<<"},
     -- [">"] = {">>"},
-    U = { "<C-r>" },
-    H = { "g^" },
-    L = { "g$" },
-    J = { "5gj" },
-    K = { "5gk" },
-    ["<M-j>"] = { ":m .+1<CR>==" },
-    ["<M-k>"] = { ":m .-2<CR>==" },
-    ["<M-J>"] = { ":t .<CR>" },
-    ["<M-K>"] = { ":t .-1<CR>" },
+    U = "<C-r>",
+    H = "g^",
+    L = "g$",
+    J = "5gj",
+    K = "5gk",
+    ["<M-j>"] = ":m .+1<CR>==",
+    ["<M-k>"] = ":m .-2<CR>==",
+    ["<M-J>"] = ":t .<CR>",
+    ["<M-K>"] = ":t .-1<CR>",
     ["<leader>k"] = { function() vim.lsp.buf.hover() end, desc = "Hover symbol details" },
+    ["<leader>j"] = { "J", desc = "Join Lines" },
+
+    ["<leader>r"] = { ":%s//g<Left><Left>", desc = "Global Replace" },
   },
   t = {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
   },
   x = {
-    J = { "5gj" },
-    K = { "5gk" },
-    ["<M-j>"] = { ":m'>+<CR>==gv" },
-    ["<M-k>"] = { ":m-2<CR>==gv" },
-    ["<M-J>"] = { ":t'><CR>gv" },
-    ["<M-K>"] = { ":t-1<CR>gv" },
+    J = "5gj",
+    K = "5gk",
+    ["<M-j>"] = ":m'>+<CR>==gv",
+    ["<M-k>"] = ":m-2<CR>==gv",
+    ["<M-J>"] = ":t'><CR>gv",
+    ["<M-K>"] = ":t-1<CR>gv",
+    ["<leader>j"] = { "J", desc = "Join Lines" },
+    ["leader>f"] = { 'y<ESC>/<c-r>"<CR>', desc = "Search Selected" },
+    ["leader>F"] = { "<cmd>Telescope grep_string<cr>", desc = "Global Search Selected" },
+
+    ["<leader>r"] = { ":s//g<Left><Left>", desc = "Replace in Selected" },
   },
 }
