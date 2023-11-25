@@ -8,10 +8,10 @@ return {
       -- This feature will not work if the plugin is lazy-loaded
       vim.g.lf_netrw = 1
 
-      require("lf").setup({
+      require("lf").setup {
         escape_quit = true,
         border = "rounded",
-      })
+      }
 
       vim.keymap.set("n", "<leader>o", "<Cmd>Lf<CR>")
 
@@ -22,6 +22,11 @@ return {
       -- })
     end,
     requires = { "toggleterm.nvim" },
+  },
+  {
+    "kaarmu/typst.vim",
+    ft = "typst",
+    lazy = false,
   },
   -- "andweeb/presence.nvim",
   -- {
