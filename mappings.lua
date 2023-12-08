@@ -56,6 +56,8 @@ return {
     -- ["<esc>"] = false,
   },
   x = {
+    H = "g^",
+    L = "g$",
     J = "5gj",
     K = "5gk",
     ["<M-j>"] = ":m'>+<CR>==gv",
