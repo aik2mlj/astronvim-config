@@ -23,11 +23,6 @@ return {
     end,
     requires = { "toggleterm.nvim" },
   },
-  {
-    "kaarmu/typst.vim",
-    ft = "typst",
-    lazy = false,
-  },
   -- "andweeb/presence.nvim",
   -- {
   --   "ray-x/lsp_signature.nvim",
