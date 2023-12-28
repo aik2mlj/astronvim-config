@@ -6,11 +6,20 @@ return {
 
   { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.colorscheme.kanagawa-nvim" },
+  { import = "astrocommunity.color.headlines-nvim" },
+  {
+    "lukas-reineke/headlines.nvim",
+    opts = {
+      markdown = {
+        codeblock_highlight = false,
+      },
+    },
+  },
   { import = "astrocommunity.pack.python-ruff" },
   { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.pack.typst" },
   { import = "astrocommunity.motion.leap-nvim" },
   { import = "astrocommunity.lsp.lsp-signature-nvim" },
-  { import = "astrocommunity.editing-support.todo-comments-nvim"}
+  { import = "astrocommunity.editing-support.todo-comments-nvim" },
   -- { import = "astrocommunity.completion.copilot-lua-cmp" },
 }
