@@ -6,6 +6,20 @@ return {
 
   { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.colorscheme.kanagawa-nvim" },
+  {
+    "rebelot/kanagawa.nvim",
+    opts = {
+      colors = {
+        theme = {
+          all = {
+            ui = {
+              bg_gutter = "none",
+            },
+          },
+        },
+      },
+    },
+  },
   { import = "astrocommunity.color.headlines-nvim" },
   {
     "lukas-reineke/headlines.nvim",
