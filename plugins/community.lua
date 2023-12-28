@@ -35,5 +35,5 @@ return {
   { import = "astrocommunity.motion.leap-nvim" },
   { import = "astrocommunity.lsp.lsp-signature-nvim" },
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
-  -- { import = "astrocommunity.completion.copilot-lua-cmp" },
+  { import = "astrocommunity.completion.codeium-vim" },
 }
