@@ -65,8 +65,9 @@ return {
     ["<M-J>"] = ":t'><CR>gv",
     ["<M-K>"] = ":t-1<CR>gv",
     ["<leader>j"] = { "J", desc = "Join Lines" },
-    ["leader>f"] = { 'y<ESC>/<c-r>"<CR>', desc = "Search Selected" },
-    ["leader>F"] = { "<cmd>Telescope grep_string<cr>", desc = "Global Search Selected" },
+    ["<leader>f"] = { 'y<ESC>/<c-r>"<CR>', desc = "Search Selected" },
+    ["<leader>F"] = { "<cmd>Telescope grep_string<cr>", desc = "Global Search Selected" },
+    ["<leader>R"] = { ":SnipRun<cr>", desc = "SnipRun" },
 
     ["<leader>r"] = { ":s//g<Left><Left>", desc = "Replace in Selected" },
   },
