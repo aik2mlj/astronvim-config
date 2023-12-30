@@ -23,6 +23,7 @@ return {
     end,
     requires = { "toggleterm.nvim" },
   },
+  { "h-hg/fcitx.nvim", event = { "User AstroFile", "InsertEnter" } },
   -- "andweeb/presence.nvim",
   -- {
   --   "ray-x/lsp_signature.nvim",
