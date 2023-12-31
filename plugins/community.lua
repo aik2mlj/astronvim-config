@@ -32,6 +32,7 @@ return {
   { import = "astrocommunity.code-runner.sniprun" },
   {
     "michaelb/sniprun",
+    build = "bash ./install.sh",
     opts = {
       display = { "Terminal", "VirtualTextOk" },
       selected_interpreters = { "Python3_fifo" },
