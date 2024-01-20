@@ -24,6 +24,12 @@ return {
     requires = { "toggleterm.nvim" },
   },
   { "h-hg/fcitx.nvim", event = { "User AstroFile", "InsertEnter" } },
+  {
+    "chomosuke/typst-preview.nvim",
+    ft = "typst",
+    version = "0.1.*",
+    build = function() require("typst-preview").update() end,
+  },
   -- "andweeb/presence.nvim",
   -- {
   --   "ray-x/lsp_signature.nvim",
