@@ -21,6 +21,7 @@ return {
     },
   },
   { import = "astrocommunity.color.headlines-nvim" },
+  { import = "astrocommunity.color.transparent-nvim" },
   {
     "lukas-reineke/headlines.nvim",
     opts = {
