@@ -58,12 +58,11 @@ return {
       -- "pyright"
     },
     config = {
-      typst_lsp = function(opts)
-        return {
-          exportPdf = "onType", -- Choose onType, onSave or never.
-          root_dir = require("lspconfig.util").root_pattern("README.md", ".git", "main.typ"),
-        }
-      end,
+      typst_lsp = {
+        settings = {
+          exportPdf = "onType",
+        },
+      },
     },
   },
 
