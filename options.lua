@@ -26,6 +26,11 @@ return {
 
     -- typst conceal
     typst_conceal = true,
+
+    -- neovide options
+    neovide_transparency = 0.8,
+    neovide_hide_mouse_when_typing = true,
+    neovide_theme = "auto",
   },
 }
 -- If you need more control, you can use the function()...end notation
