@@ -84,6 +84,11 @@ return {
     -- neovide configs
     if vim.g.neovide then
       vim.cmd "TransparentDisable"
+      vim.keymap.set("v", "<C-S-C>", '"+y') -- Copy
+      vim.keymap.set("n", "<C-S-V>", '"+p') -- Paste normal mode
+      vim.keymap.set("v", "<C-S-V>", '"+p') -- Paste visual mode
+      vim.keymap.set("c", "<C-S-V>", "<C-R>+") -- Paste command mode
+      vim.keymap.set("i", "<C-S-V>", '<ESC>"+pi') -- Paste insert mode
     else
       vim.cmd "TransparentEnable"
     end
