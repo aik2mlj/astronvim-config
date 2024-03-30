@@ -52,6 +52,7 @@ return {
   { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.pack.typst" },
   { import = "astrocommunity.pack.bash" },
+  { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.motion.leap-nvim" },
   { import = "astrocommunity.lsp.lsp-signature-nvim" },
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
