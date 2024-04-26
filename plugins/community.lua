@@ -53,6 +53,7 @@ return {
   { import = "astrocommunity.pack.typst" },
   { import = "astrocommunity.pack.bash" },
   { import = "astrocommunity.pack.rust" },
+  { import = "astrocommunity.pack.html-css" },
   { import = "astrocommunity.motion.leap-nvim" },
   { import = "astrocommunity.lsp.lsp-signature-nvim" },
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
